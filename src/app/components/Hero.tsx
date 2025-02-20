@@ -25,7 +25,7 @@ export default function Hero() {
                         type:"spring",
                         visualDuration:0.5
                         }}>      
-                        <nav className="flex items-center justify-between bg-white bg-transparent sticky">
+                        <nav className="hidden md:flex items-center justify-between bg-white bg-transparent sticky">
                         <ul id="navigator" className="flex space-x-10 text-sm font-extralight text-gray-500">
                             <li><Link href="#" className="hover:text-blue-500">This</Link></li>
                             <li><Link href="#" className="hover:text-blue-500">Is</Link></li>

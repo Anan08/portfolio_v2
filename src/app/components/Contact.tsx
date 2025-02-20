@@ -7,7 +7,7 @@ export default function Contact() {
             initial={{opacity:0}}
             whileInView={{opacity:1}}
             transition={{duration:1}}
-            className="text-xl">
+            className="text-xl items-center justify-center flex flex-col">
                 <h1>CONTACT</h1>
                 <motion.div
                 initial={{
@@ -24,11 +24,11 @@ export default function Contact() {
 
                 >
                     <form method="post" className="py-10 flex flex-col items-center space-y-5 text-sm">
-                        <input type="text" name="email" placeholder="Email"/>
-                        <input type="text" name="request" placeholder="Request"/>
+                        <input type="text" name="email" placeholder="Email" className="p-5 shadow-lg rounded-md"/>
+                        <textarea name="request" placeholder="Request" className="p-5 h-32 shadow-lg rounded-md"/>
                         <motion.button
                         type="submit"
-                        className="text-white bg-gray-600 p-5 rounded-xl"
+                        className="text-white bg-gray-600 p-3 rounded-xl"
                         initial={{
                             opacity:0,
                         }}
